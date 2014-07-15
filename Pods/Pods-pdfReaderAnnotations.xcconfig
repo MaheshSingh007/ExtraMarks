@@ -1,0 +1,6 @@
+FRAMEWORK_SEARCH_PATHS = "$(PODS_ROOT)/PSPDFKit/**" "$(PODS_ROOT)/PSPDFKit/PSPDFKit.embeddedframework"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers" "${PODS_ROOT}/Headers/PSPDFKit" $(SDKROOT)/usr/include/libxml2
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers" -isystem "${PODS_ROOT}/Headers/PSPDFKit"
+OTHER_LDFLAGS = -ObjC -lsqlite3 -lxml2 -lz -framework AVFoundation -framework Accelerate -framework AssetsLibrary -framework AudioToolbox -framework CFNetwork -framework CoreGraphics -framework CoreMedia -framework CoreTelephony -framework CoreText -framework Foundation -framework ImageIO -framework MediaPlayer -framework MessageUI -framework MobileCoreServices -framework PSPDFKit -framework QuartzCore -framework QuickLook -framework Security -framework SystemConfiguration -framework UIKit
+PODS_ROOT = ${SRCROOT}/Pods
